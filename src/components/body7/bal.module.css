@@ -1,0 +1,81 @@
+.main {
+  height: 650px;
+  background-color: #eecdc7;
+}
+.body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 650px;
+}
+.body > div {
+  width: 50%;
+}
+.imageDiv {
+  position: relative;
+}
+.playButton {
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  cursor: pointer;
+  animation: pointer 3s steps(120) infinite alternate;
+}
+.modelImg {
+  box-shadow: 9px 9px 20px 5px #171717a8;
+}
+
+.innerText {
+  margin-left: 50px;
+}
+.innerText p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.sociAlLogo {
+  display: flex;
+}
+.sociAlLogo > img {
+  margin-right: 15px;
+}
+
+@keyframes pointer {
+  from {
+    transform: scale(1.2) translate(-50%, -50%);
+  }
+  to {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .main,
+  .body {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .body {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+  .innerText {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .innerText h1{
+    font-size: 20px;
+  }
+  .innerText p{
+    font-size: 15px;
+    margin-bottom: 37px;
+  }
+  .playButton {
+    width: 30px;
+  }
+  .sociAlLogo img{
+    width: 27px !important;
+  }
+}

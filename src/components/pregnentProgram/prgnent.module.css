@@ -1,0 +1,35 @@
+.pregnent{
+  background-color: #E5E3E1;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 700px;
+}
+.text{
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.text p{
+  max-width: 500px;
+  margin: 30px 0px;
+}
+@media only screen and (max-width: 830px) {
+.pregnent{
+  background-position:70% 50%;
+  margin-top: 50px;
+}
+.text{
+  margin-left: 20px;
+}
+.text p{
+  max-width: 400px;
+}
+}
+
+/* @media only screen and (max-width: 830px) {
+.pregnent{
+  background-position: 65% 50%;
+}
+} */

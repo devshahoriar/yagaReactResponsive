@@ -1,0 +1,49 @@
+.imageDiv{
+  width: 50%;
+
+}
+.textDiv{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.textDiv h1{
+  width: 400px;
+}
+.textDiv p{
+  margin: 30px 0px;
+  max-width: 500px;
+}
+
+.backImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 830px) {
+  .imageDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(1);
+    opacity: .5;
+    z-index: -1;
+  }
+  .textDiv{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  .textDiv h1, .textDiv p{
+  max-width: 70%;
+  width: 70%;
+  text-align: center;
+  display: block;
+}
+
+}

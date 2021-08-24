@@ -1,0 +1,42 @@
+.mainYoga {
+  position: relative;
+}
+.backImg {
+  position: absolute;
+}
+.yogaMainDiv {
+  display: flex;
+  height: 650px;
+  align-items: center;
+}
+.yogaText,
+.yogaImg {
+  width: 50%;
+}
+.yogaText p {
+  margin: 30px 0;
+  width: 400px;
+}
+@media only screen and (max-width: 1120px) {
+  .yogaMainDiv {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .yogaMainDiv {
+    position: relative;
+  
+  }
+  .yogaText{
+    width: 100%;
+    text-align: center;
+   }
+   .yogaText h1, .yogaText p{
+     width: 100% !important;
+     max-width: 100% !important;
+   }
+  .yogaImg{
+    display: none;
+  }
+}

@@ -1,0 +1,77 @@
+.fullDiv{
+  width: 100%;
+  position: relative;
+  background-color: white;
+  height: 800px;
+}
+.imagediv{
+  position: absolute;
+  width: 180px;
+  z-index: 1;
+}
+.imagediv img{
+  width: 100%;
+}
+.top{
+  top: 0;
+  right: 0;
+}
+
+.bottom{
+  left: 0;
+  bottom: 0;
+}
+
+.down{
+  top: 20%;
+  left: 30%;
+}
+.up{
+  bottom: 15%;
+  right: 30%;
+}
+
+
+.GallaryText{
+  padding-top: 60px;
+  text-align: center;
+  color: #434E5B;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.GallaryText h1{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.GallaryText p{
+  width: 700px;
+}
+.cardContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 1020px) {
+.fullDiv{
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .fullDiv{
+    height: auto;
+  }
+  .cardContainer{
+    flex-direction: column;
+  }
+  .GallaryText p{
+  width: 70%;
+}
+}

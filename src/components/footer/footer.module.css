@@ -1,0 +1,39 @@
+.footerOuter{
+width: 100%;
+height: 250px;
+background-color: #434E5B;
+}
+.footer{
+  /* background-color: red; */
+}
+.footerInner{
+  display: flex;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleDiv{
+  color: #FFFFFF;
+  margin-left: 60px;
+}
+.titleDiv p{
+  margin: 15px 0px;
+}
+.titleDiv a{
+color: #FFFFFF;
+}
+.logoSite {
+  color: #FFFFFF;
+  margin-right: 60px;
+}
+.logoSite p{
+  margin-top: 10px;
+}
+@media only screen and (max-width: 815px) {
+.titleDiv{
+  display: none;
+}
+.footerInner{
+  justify-content: center;
+}
+}

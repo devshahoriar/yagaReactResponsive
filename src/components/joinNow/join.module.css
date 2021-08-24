@@ -1,0 +1,49 @@
+.mainJoin {
+  width: 100%;
+  background-color: #f2f1ef;
+  height: 650px;
+}
+
+.innerJoin {
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+.innerJoin > div {
+  width: 50%;
+}
+.textDiv p {
+  margin: 30px 0px;
+}
+  .textBa h1{
+    z-index: -1;
+  }
+
+.textBa {
+  position: relative;
+  width: 100% !important;
+}
+@media only screen and (max-width: 955px) {
+  .imgDiv {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  .textDiv {
+    text-align: center;
+    width: 100% !important;
+  }
+  .textBa h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .textBa > div {
+    left: 50%;
+  }
+  .mainJoin {
+    height: 500px;
+  }
+  .innerJoin {
+    height: 500px;
+  }
+}

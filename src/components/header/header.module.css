@@ -1,0 +1,78 @@
+.navBar ul {
+  display: flex;
+}
+.navBar ul li {
+  list-style: none;
+}
+
+.navBar ul li a {
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #484f5b;
+  transition: color .3s;
+}
+
+.navBar ul li a:hover{
+  color: #f1c9c3;
+}
+
+.handeler {
+  display: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logo {
+  object-fit: cover;
+  width: 90px;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.727);
+  text-align: center;
+  height: 600px;
+  backdrop-filter: blur(10px);
+  transition: top 1.5s;
+  top: -600%;
+  z-index: 9999;
+}
+
+.mobileMenu ul {
+  list-style: none;
+  margin-top: 100px;
+}
+
+.mobileMenu ul li a {
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.5s;
+  z-index: 99999;
+}
+
+.mobileMenu ul li a:hover {
+  color: #f1c9c3;
+}
+
+@media only screen and (max-width: 830px) {
+  .navBar {
+    display: none;
+  }
+  .handeler {
+    display: inline;
+  }
+  .logo {
+    object-fit: cover;
+    width: 70px;
+  }
+}
